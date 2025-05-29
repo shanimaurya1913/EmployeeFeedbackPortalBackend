@@ -20,9 +20,9 @@ Welcome to the **Employee Feedback Portal**! This web application allows employe
 
 ## Technologies Used
 
-- **Frontend**: React (JavaScript), HTML, CSS
+- **Frontend**: React (Typescript), HTML, CSS, JSX
 - **Backend**: Node.js, Express, TypeScript
-- **Database**: MySQL (via Sequelize ORM)
+- **Database**: MySQL (via TYPE ORM)
 - **Authentication**: JWT (JSON Web Tokens)
 
 ---
@@ -39,3 +39,38 @@ Welcome to the **Employee Feedback Portal**! This web application allows employe
    git clone https://github.com/shanimaurya1913/EmployeeFeedbackPortalBackend.git
    cd EmployeeFeedbackPortalBackend
    ```
+
+## Install Dependencies:
+  ```bash
+    cd backend
+    npm install
+  ```
+
+## Set up Environment Variables:
+  PORT=5000
+
+# Database
+DB_HOST=localhost
+DB_PORT=3306
+DB_USERNAME=root
+DB_PASSWORD=Shani@123
+DB_NAME=employeefeedbackportal
+
+# JWT Secret for authentication
+JWT_SECRET=yourSuperSecretKey
+
+## Run the Backend
+npm run dev
+
+## Admin Register
+  ```
+    curl --location 'http://localhost:5000/api/auth/register' \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+        "name": "Admin Name", 
+        "email": "admin@example.com", 
+        "password": "adminPassword123"
+    }'
+  ```
+
+
