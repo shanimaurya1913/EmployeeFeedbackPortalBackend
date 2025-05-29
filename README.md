@@ -50,17 +50,23 @@ Welcome to the **Employee Feedback Portal**! This web application allows employe
   PORT=5000
 
 # Database
-DB_HOST=localhost
-DB_PORT=3306
-DB_USERNAME=root
-DB_PASSWORD=Shani@123
-DB_NAME=employeefeedbackportal
+  ```
+    DB_HOST=localhost
+    DB_PORT=3306
+    DB_USERNAME=root
+    DB_PASSWORD=****@123
+    DB_NAME=employeefeedbackportal
+  ```
 
 # JWT Secret for authentication
-JWT_SECRET=yourSuperSecretKey
+  ```
+    JWT_SECRET=yourSuperSecretKey
+  ```
 
 ## Run the Backend
-npm run dev
+  ```
+    npm run dev
+  ```
 
 ## Admin Register
   ```
@@ -72,5 +78,7 @@ npm run dev
         "password": "adminPassword123"
     }'
   ```
+
+
 
 
